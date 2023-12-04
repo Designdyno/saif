@@ -914,71 +914,39 @@
                   </div>
                 </div>
                 <div class="contact-form-area">
-                  <form
-                    method="post"
-                    class="contact-validation-active"
-                    id="contact-form-main"
-                  >
+                  <form method="post" action="send_email.php" class="contact-validation-active" id="contact-form-main">
                     <div>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="name"
-                        id="name"
-                        placeholder="Your Name*"
-                      />
+                        <input type="text" class="form-control" name="name" id="name" placeholder="Your Name*">
                     </div>
                     <div>
-                      <input
-                        type="email"
-                        class="form-control"
-                        name="email"
-                        id="email"
-                        placeholder="Your Email*"
-                      />
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email*">
                     </div>
                     <div>
-                      <input
-                        type="text"
-                        class="form-control"
-                        name="adress"
-                        id="adress"
-                        placeholder="Adress"
-                      />
+                        <input type="text" class="form-control" name="address" id="address" placeholder="Address">
                     </div>
                     <div class="select_item">
-                      <select name="subject" id="subject" class="form-control">
-                        <option disabled="disabled" selected>Services</option>
-                        <option>Website Design</option>
-                        <option>Mobile App Design</option>
-                        <option>UX/UI Design</option>
-                        <option>Graphic Design</option>
-                      </select>
+                        <select name="subject" id="subject" class="form-control">
+                            <option disabled="disabled" selected>Services</option>
+                            <option>Website Design</option>
+                            <option>Mobile App Design</option>
+                            <option>UX/UI Design</option>
+                            <option>Graphic Design</option>
+                        </select>
                     </div>
                     <div class="fullwidth">
-                      <textarea
-                        class="form-control"
-                        name="note"
-                        id="note"
-                        placeholder="Message..."
-                      ></textarea>
+                        <textarea class="form-control" name="note" id="note" placeholder="Message..."></textarea>
                     </div>
                     <div class="submit-area">
-                      <button type="submit" class="submit-btn mouseCursor">
-                        Send Message
-                      </button>
-                      <div id="loader">
-                        <i class="ti-reload"></i>
-                      </div>
+                        <button type="submit" class="submit-btn mouseCursor">Send Message</button>
+                        <div id="loader">
+                            <i class="ti-reload"></i>
+                        </div>
                     </div>
                     <div class="clearfix error-handling-messages">
-                      <div id="success">Thank you</div>
-                      <div id="error">
-                        Error occurred while sending email. Please try again
-                        later.
-                      </div>
+                        <div id="success">Thank you</div>
+                        <div id="error">Error occurred while sending email. Please try again later.</div>
                     </div>
-                  </form>
+                </form>
                 </div>
               </div>
             </section>
